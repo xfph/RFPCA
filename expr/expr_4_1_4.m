@@ -34,7 +34,6 @@ for i=1:length(model)
             [bpt, Xc, opts] = mvt_ini(X, opts);  
             [bp{i},opts] = mvt(bpt,X,opts);
         case 'tPCA'
-            opts.ini = 'adhoc';
             [bpt, xc, opts] = mt_ini(x, opts); 
             [bp{i},opts] = mt(bpt,x,opts);
     end
