@@ -5,7 +5,7 @@ mvt.m
 -- Main file used to obtain the ML estimate for the Mt distribution.
 
 mvn.m
--- Main file used to obtain the ML estimate for the matrix-variate normal distribution.
+-- Main file used to obtain the ML estimate for the matrix-normal distribution.
 
 mxvt.m
 -- Main file used to obtain the ML estimate for the T distribution.
