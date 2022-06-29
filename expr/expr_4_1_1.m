@@ -8,7 +8,7 @@ load simu1-data1.mat;
 [dc, dr, N] = size(X);
 alg={'ECME' 'PX-ECME'};
 iternum=zeros(1, length(alg)); logL=iternum;
-disp_ini=1; disp_it=1;
+disp_ini=1; disp_it=0;
 if disp_ini
     fprintf('    data: %d points in [%d %d] dimensions\n',N,[dc dr]);
     fprintf('\n--> Fitting RFPCA model by different ML algorithms:\n');

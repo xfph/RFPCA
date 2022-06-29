@@ -7,9 +7,9 @@ model = {'RFPCA','TPCA','FPCA','BPCA','tPCA','PCA'};
 
 datatype='mx_g'; ndata1=1000; nu=[];
 d = [4,10]; q = [1,3];
-a = [-100,100;-10000,10000;100,110;10000,11000];
+%a = [-100,100;-10000,10000;100,110;10000,11000];
 caseid = {'a','b','c','d'}; cj = 3;
-p = [0,0.01,0.02,0.03,0.07,0.09];
+p = [0,0.01,0.02,0.03];
 % rep = 50;
 otypes = 'oc'; % 'pc' for PC outliers, 'oc' for OC outliers and 'all' for
 % PC+OC outliers.

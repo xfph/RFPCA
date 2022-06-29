@@ -5,15 +5,18 @@ addpath('./data'); addpath('../prog'); addpath('../prog/common');
 model = {'RFPCA','TPCA','FPCA'}; %'tPCA'
 
 datatype='mx_g'; d = [100,100]; q = [3,3]; pd=prod(d); nu=[];
-a = [100,110]; p = 0.005; N_tr = [200,500,1000,2000,4000,8000,13000];
-otype = 'oc'; nj = 2;
+a = [100,110]; p = 0.005; N_tr = 500;
+otype = 'oc';
 
 rep = 1;
 load simu5-data4-N2.mat;
-T = zeros(length(N_tr),length(model)); itnum = T;
-logL = zeros(1,length(model)); llh = cell(1,length(model)); T_it=llh;
+T = zeros(1,length(model)); itnum = T;
+logL = zeros(1,length(model)); llh = cell(1,length(model)); 
+
+fprintf('\n\t\t\t\t\t\t CPU time\t\t Iterations\t\t\t logL'); 
 for mj = 1:length(model)
-    opts = []; opts.maxit = 1000; opts.tol = 1e-8; opts.disp_it = 1;
+    fprintf(['\n--------->%6s:'], model{mj});
+    opts = []; opts.maxit = 1000; opts.tol = 1e-8; opts.disp_it = 0;
     switch model{mj}
         case 'RFPCA'
             t0=cputime;
@@ -32,10 +35,10 @@ for mj = 1:length(model)
             [bpt, xc, opts] = mt_ini(x_tr, opts);
             [bp{mj},opts] = mt(bpt,xc,opts);
     end
-    T(nj,mj) = cputime-t0; itnum(nj,mj) = opts.itnum;
+    T(mj) = cputime-t0; itnum(mj) = opts.itnum;
     bp{mj}.model = model{mj};
     logL(mj) = opts.logL; llh{mj} = opts.errlog;
-    T_it{mj} = opts.time.ini + opts.time.preit + cumsum(opts.time.it);
+    fprintf('%15.3f', T(mj)); fprintf('%16d', itnum(mj)); fprintf('%22.5f', logL(mj));
 end
 %     eval(['save simu5_t_itnum_' otype '.mat'  ' T itnum;']);
 rmpath('./data');rmpath('../prog'); rmpath('../prog/common');

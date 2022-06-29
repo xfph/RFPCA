@@ -2,13 +2,13 @@
 
 The folder prog contains function files of the proposed RFPCA and other related methods in the paper, details as below.
 mvt.m
--- Main file used to obtain the ML estimate for the matrix-variate t distribution.
+-- Main file used to obtain the ML estimate for the Mt distribution.
 
 mvn.m
 -- Main file used to obtain the ML estimate for the matrix-variate normal distribution.
 
 mxvt.m
--- Main file used to obtain the ML estimate for the matrix-variate T distribution.
+-- Main file used to obtain the ML estimate for the T distribution.
 
 mt.m
 -- Main file used to obtain the ML estimate for the multivariate t distribution.

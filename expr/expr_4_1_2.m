@@ -16,7 +16,7 @@ x_tr = reshape(X_tr,[prod(d),N_tr]);
 llh_true = llh(mo,X_ts,dis_true{dataid}); % true test log-likelihood
 llh_est1 = zeros(1,length(model));
 for mj=1:length(model)
-    fprintf(['\n--------->%6s:\n'],model{mj});
+    %fprintf(['\n--------->%6s:\n'],mdname{mj});
     opts = [];  opts.maxit = 1000; opts.tol=1e-8; opts.disp_it = 0;
     switch model{mj}
         case 'RFPCA'
@@ -37,6 +37,7 @@ for mj=1:length(model)
             llh_est1(mj) = llh(bp{mj},x_ts,'mt');
     end
 end
-llh_est1
+fprintf('test log-likelihood for each method:\n')
+array2table(llh_est1,'VariableNames',model)
 % eval(['save simu2_test_llh_' int2str(dataid) '.mat' ' llh_true llh_est;']);
 rmpath('./data'); rmpath('../prog'); rmpath('../prog/common'); 
