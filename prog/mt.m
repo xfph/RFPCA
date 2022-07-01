@@ -7,7 +7,7 @@ function [bp,opts] = mt(bp,x,opts)
 %             bp.tau: Weights;
 %             bp.S: Sigma;
 %  
-%  opts:      Structure of related settings in matrix-variate t distribution
+%  opts:      Structure of related settings in multivariate t  distribution
 %             opts.alg: 'PX-ECME'
 %             opts.errlog:  a vector recording the log likelihood at each iteration.
 %	          opts.disp_it = 1 display error values; logs error;

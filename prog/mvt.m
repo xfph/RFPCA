@@ -1,5 +1,5 @@
 function [bp,opts]=mvt(bp,X,opts)
-%   mvt performs maximum likelihood estimation for matrix-variate t distribution
+%   mvt performs maximum likelihood estimation for Mt distribution
 %
 %   bp:      Structure of all parameters in matrix-variate t distribution
 %             bp.M: mean matrix;
@@ -8,7 +8,7 @@ function [bp,opts]=mvt(bp,X,opts)
 %             bp.Sc: Sigma_c;
 %             bp.Sr: Sigma_r;
 %  
-%  opts:      Structure of related settings in matrix-variate t distribution
+%  opts:      Structure of related settings in Mt distribution
 %             opts.alg: 'ECME, 'PX-ECME'
 %             opts.errlog:  a vector recording the log likelihood at each iteration.
 %	          opts.disp_it = 1 display error values; logs error;

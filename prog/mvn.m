@@ -1,12 +1,12 @@
 function [bp,opts] = mvn(bp,X,opts)
-%   mvn performs ML estimation for matrix normal distribution.
+%   mvn performs ML estimation for matrix-normal distribution.
 %
 %   bp:      Structure of all parameters in matrix-variate t distribution
 %            bp.M: mean matrix;
 %            bp.Sc: sigma_c;
 %            bp.Sr: sigma_r;
 %  
-%  opts:      Structure of related settings in matrix-variate normal distribution
+%  opts:      Structure of related settings in matrix-normal distribution
 %             opts.alg: 'CM'
 %             opts.errlog:  a vector recording the log likelihood at each iteration.
 %	          opts.disp_it = 1 display error values; logs error;
