@@ -1,6 +1,6 @@
 % expr_4_1_2 performs the accuracies of estimators
 clc; clear all;
-addpath('./data'); addpath('../prog'); addpath('../prog/common'); 
+addpath('./data'); addpath('../../prog'); addpath('../../prog/common'); 
 
 rng(100);
 model = {'RFPCA','TPCA','FPCA','tPCA'};
@@ -40,4 +40,4 @@ end
 fprintf('test log-likelihood for each method:\n')
 array2table(llh_est1,'VariableNames',model)
 % eval(['save simu2_test_llh_' int2str(dataid) '.mat' ' llh_true llh_est;']);
-rmpath('./data'); rmpath('../prog'); rmpath('../prog/common'); 
+rmpath('./data'); rmpath('../../prog'); rmpath('../../prog/common'); 

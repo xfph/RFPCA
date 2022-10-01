@@ -1,7 +1,7 @@
 %  expr_4_1_3 used to obtain the relative difference between the estimated
 %  and true covariance matrix for different proportions of outliers.
 clc; clear all;
-addpath('./data'); addpath('../prog'); addpath('../prog/common');
+addpath('./data'); addpath('../../prog'); addpath('../../prog/common');
 
 model = {'RFPCA','TPCA','FPCA','BPCA','tPCA','PCA'};
 
@@ -23,7 +23,7 @@ for pj = [3,4]
     err
     %eval(['save relED_50_' int2str(pj) '_case_' caseid{cj} '_' otypes '.mat err methods;']);
 end
-rmpath('./data'); rmpath('../prog'); rmpath('../prog/common');
+rmpath('./data'); rmpath('../../prog'); rmpath('../../prog/common');
 
 function [err,bp]=simu3(X,model,mo)
 [d(1),d(2),N] = size(X); pd = prod(d);

@@ -1,6 +1,6 @@
 % expr4_1_1 performs the convergence of ECME and PX-ECME algorithms.
 clc; clear all;
-addpath('./data'); addpath('../prog'); addpath('../prog/common'); 
+addpath('./data'); addpath('../../prog'); addpath('../../prog/common'); 
 
 load simu1-data1.mat;
 %load simu1-data2.mat;
@@ -31,4 +31,4 @@ for i=1:length(alg)
 end
 % eval(['save simu1_low.mat' ' alg T T1 iternum ll;']);
 % eval(['save simu1_high.mat' ' alg T T1 iternum ll;']);
-fprintf('\n'); rmpath('../prog'); rmpath('../prog/common'); 
+fprintf('\n'); rmpath('../../prog'); rmpath('../../prog/common'); 
