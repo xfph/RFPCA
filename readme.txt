@@ -20,8 +20,26 @@ bpca.m
 -- Code to implement bidirectional PCA (BPCA).
 
 
-The folder expr contains the codes for all the experiments in section 4.1 of the paper, details as below. 
+The folder expr contains the codes for sections 4.1 and 4.3.2 in the paper, details as below. 
 
+The subfolder MTS contains the codes for the classification of multivariate time series datasets.
+AUS_without.mat, AUS_caseIV.mat
+-- The training and test sets for AUSLAN data with a random splitting. 
+    'without' means no outliers; 'caseIV' means the case IV mentioned in Section 4.3, that is, the outlying observations from the uniform distribution U(0,10), and its proportion is 20%.
+
+demo_err_aus.m
+-- Code to show the lowest error rate by different methods on the AUSLAN dataset with a random splitting.
+
+mts_1.m
+-- Code to calculate the classification error rates of different methods.
+
+compr.m
+-- Function to obtain compressed representations of different methods in the paper.
+
+nnerr.m
+-- Function to calculate the classification error rates using the 1-nearest neighbor classifier.
+
+The subfolder simulation contains the codes for all the experiments in section 4.1 of the paper, details as below. 
 expr_4_1_1.m, expr_4_1_2.m, expr_4_1_3.m, expr_4_1_4.m and expr_4_1_5.m
 -- Codes used to obtain the results of Sec 4.1.1, Sec 4.1.2, Sec 4.1.3, Sec 4.1.4 and Sec 4.1.5, respectively. 
 
