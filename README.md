@@ -1,4 +1,4 @@
-This is the Matlab code for the RFPCA method.
+This is the Matlab codes for the RFPCA method.
 
 # Reference
 Ma, X., Zhao, J.H., Wang, Y., Shang, C.C. and Jiang, F., Robust factored principal component analysis for matrix-valued outlier accommodation and detection, *Under revision* (2022).

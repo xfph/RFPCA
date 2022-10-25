@@ -8,7 +8,7 @@ mvn.m
 -- Main file used to obtain the ML estimate for the matrix-normal distribution.
 
 mxvt.m
--- Main file used to obtain the ML estimate for the T distribution.
+-- Main file used to obtain the ML estimate for the MxT distribution.
 
 mt.m
 -- Main file used to obtain the ML estimate for the multivariate t distribution.
@@ -38,6 +38,9 @@ compr.m
 
 nnerr.m
 -- Function to calculate the classification error rates using the 1-nearest neighbor classifier.
+
+test_MxT.m
+-- Code to show the running results of MxT imposing parsimonious covariance structures on the AUSLAN dataset.
 
 The subfolder simulation contains the codes for all the experiments in section 4.1 of the paper, details as below. 
 expr_4_1_1.m, expr_4_1_2.m, expr_4_1_3.m, expr_4_1_4.m and expr_4_1_5.m
