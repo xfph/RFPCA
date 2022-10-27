@@ -1,6 +1,6 @@
 # This file contains a brief introduction to the code package.
 
-The folder prog contains function files of the proposed RFPCA and other related methods in the paper, detailed as follow.
+The folder prog contains function files of the proposed RFPCA and other related methods in the paper, detailed as follows.
 mvt.m
 -- mvt obtains the ML estimate for the Mt distribution.
 
@@ -20,7 +20,7 @@ bpca.m
 -- bpca implements bidirectional PCA (BPCA).
 
 
-The folder expr contains the codes for sections 4.1 and 4.3.2 in the paper, detailed as follow.
+The folder expr contains the codes for sections 4.1 and 4.3.2 in the paper, detailed as follows.
 
 The subfolder MTS contains the codes for the classification of the multivariate time series datasets.
 AUS_without.mat, AUS_caseIV.mat
@@ -43,7 +43,7 @@ nnerr.m
 test_MxT.m
 -- test_MxT shows the results of running the MxT with parsimonious covariance structures on the AUSLAN dataset.
 
-The subfolder simulation contains the codes for all the experiments in section 4.1 of the paper, detailed as follow.
+The subfolder simulation contains the codes for all the experiments in section 4.1 of the paper, detailed as follows.
 expr_4_1_1.m, expr_4_1_2.m, expr_4_1_3.m, expr_4_1_4.m and expr_4_1_5.m
 -- These M-files obtain the results of Sec 4.1.1, Sec 4.1.2, Sec 4.1.3, Sec 4.1.4 and Sec 4.1.5, respectively. 
 
@@ -64,7 +64,7 @@ demo_expr_4_1_5.m
 
 The subfolder data contains the synthetic data used for some cases in each simulation experiment.
 
-The subfolder result contains the results of each experiment, detailed as follow.
+The subfolder result contains the results of each experiment, detailed as follows.
 simu1_low.mat, simu1_high.mat
 -- Saved results for Section 4.1.1.
 
