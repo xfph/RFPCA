@@ -79,7 +79,3 @@ simu4_caseoc1.mat, simu4_caseoc2.mat, simu4_caseoc3.mat
 
 simu5_t_itnum_oc.mat
 -- Saved results for Section 4.1.5.
-
-
-
-
