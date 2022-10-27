@@ -1,4 +1,4 @@
-% This code to show the lowest error rates of different methods on the AUSLAN dataset by one random splitting.
+% This code to show the lowest error rates of different methods over one random splitting of the AUSLAN dataset. 
 %
 % To run the results on the ECG dataset, you can download ECG data from http://www.mustafabaydogan.com./files/viewcategory/20-data-sets.html, 
 % and replace the AUSLAN data set in this M-file, by dividing it into training and test sets.
